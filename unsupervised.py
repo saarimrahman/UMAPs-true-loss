@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
 import numpy as np
 import datetime
 import umap
@@ -14,6 +9,7 @@ from matplotlib.colors import ListedColormap
 from sklearn.datasets import make_moons, make_circles, make_classification
 from matplotlib.ticker import NullFormatter
 
+print('setting up logging...')
 dt = datetime.datetime.fromtimestamp(time.time())
 logdir = os.path.join('./outputs/' ,dt.strftime('%Y-%m-%d_%H:%M:%S'))
 
